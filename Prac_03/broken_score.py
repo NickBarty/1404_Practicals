@@ -10,7 +10,7 @@ def check_score(score):
         return "Excellent"
     elif score >= 50:
         return "Passable"
-    elif score < 50:
+    else:
         return "Bad"
 
 
