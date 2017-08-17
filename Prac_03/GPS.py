@@ -1,6 +1,6 @@
 import random
 
-
+# Commmit & push
 def main():
     YEARS = 10
     STARTING_POPULATION = 1000
@@ -17,8 +17,8 @@ def main():
         born_percent = (born * 100) / population
         die_percent = (die * 100) / population
         print("Year:", current_year, "\n*****")
-        print("{} gophers were born ({:.2f}%). {} died ({:.2f}%). \npopulation: {}".format(born, born_percent, die,
-                                                                                           die_percent, population))
+        print("{} gophers were born ({:.2f}%). {} died ({:.2f}%). \npopulation: {}\n".format(born, born_percent, die,
+                                                                                             die_percent, population))
         current_year += 1
         YEARS -= 1
 
