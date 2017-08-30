@@ -4,8 +4,8 @@ COLOURS = {"AliceBlue": "#f0f8ff", "AntiqueWhite": "#faebd7", "AntiqueWhite1": "
 
 user_input = input("Enter a colour name: ")
 while user_input != "":
-    if user_input in COLOURS:
-        print(COLOURS[user_input])
-    else:
-        print("Invalid colour name")
-    user_input = input("Enter a colour name: ")
+    try:
+        print("The code for {} is {}".format(user_input, COLOURS[user_input]))
+        user_input = input("Enter a colour name: ")
+    except KeyError:
+        user_input = input("Invalid colour name! \nEnter a colour name: ")
