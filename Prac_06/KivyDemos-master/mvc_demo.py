@@ -1,5 +1,6 @@
 from kivy.app import App
 from kivy.lang import Builder
+# noinspection PyProtectedMember
 from kivy.app import StringProperty
 
 
@@ -13,7 +14,6 @@ class MVCDemo(App):
 
     def handle_press(self):
         self.message = self.root.ids.user_input.text
-
 
 
 # create and start the App running

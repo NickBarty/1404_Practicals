@@ -2,7 +2,7 @@ LOWER = 33
 UPPER = 127
 
 letter = input("Enter a character: ")
-while letter.isalpha() == False or len(letter) > 1:
+while letter.isalpha() is False or len(letter) > 1:
     letter = input("Enter a character: ")
 print("The ASCII code for {} is {}".format(letter, ord(letter)))
 number = int(input("Enter a number between {} and {}: ".format(LOWER, UPPER)))

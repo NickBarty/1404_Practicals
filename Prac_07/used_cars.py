@@ -13,8 +13,8 @@ def main():
     print("odo =", limo.odometer)
     print(limo)
 
-    # print("Car {}, {}".format(limo.fuel, limo.odometer))
-    # print("Car {self.fuel}, {self.odometer}".format(self=limo))
+    print("Car {}, {}".format(limo.fuel, limo.odometer))
+    print("Car {self.fuel}, {self.odometer}".format(self=limo))
 
 
 main()

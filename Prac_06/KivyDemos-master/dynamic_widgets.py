@@ -65,4 +65,5 @@ class DynamicWidgetsApp(App):
         """
         self.root.ids.entriesBox.clear_widgets()
 
+
 DynamicWidgetsApp().run()

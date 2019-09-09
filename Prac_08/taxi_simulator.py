@@ -17,22 +17,26 @@ def main():
              SilverServiceTaxi("Hummer", 200, 4)]
 
     print("Let's drive!")
+    # no error-checking
+    display_taxis(taxis)
+    taxi_choice = int(input("Choose taxi: "))
+    current_taxi = taxis[taxi_choice]
+
     print(MENU)
     menu_choice = input(">>> ").lower()
+
     while menu_choice != "q":
         if menu_choice == "c":
-            print("Taxis available: ")
             display_taxis(taxis)
-            # no error-checking
             taxi_choice = int(input("Choose taxi: "))
             current_taxi = taxis[taxi_choice]
+
         elif menu_choice == "d":
             current_taxi.start_fare()
             distance_to_drive = float(input("Drive how far? "))
             current_taxi.drive(distance_to_drive)
             trip_cost = current_taxi.get_fare()
-            print("Your {} trip cost you ${:.2f}".format(current_taxi.name,
-                                                         trip_cost))
+            print("Your {} trip cost you ${:.2f}".format(current_taxi.name, trip_cost))
             total_bill += trip_cost
         else:
             print("Invalid option")

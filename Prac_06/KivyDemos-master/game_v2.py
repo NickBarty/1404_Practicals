@@ -1,7 +1,8 @@
 from kivy.app import App
 from kivy.lang import Builder
+# noinspection PyProtectedMember
 from kivy.app import StringProperty
-from board_game import TicTacToeGame
+from .board_game import TicTacToeGame
 
 
 class TicTacToe(App):
@@ -25,6 +26,7 @@ class TicTacToe(App):
         if self.game.is_over():
             self.status_message = "game over!"
             self.root.ids.game_grid.disabled = True
+
 
 # create and start the App running
 TicTacToe().run()

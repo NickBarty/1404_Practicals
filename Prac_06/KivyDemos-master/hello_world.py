@@ -1,4 +1,5 @@
 from kivy.app import App
+# noinspection PyProtectedMember
 from kivy.app import Widget
 
 

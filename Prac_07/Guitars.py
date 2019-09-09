@@ -20,14 +20,13 @@ def main():
     # guitars.sort()
     print("These are my guitars:")
 
-    # if guitars is not None:
-    i = 0
-    for guitar in guitars:
-        vintage_string = "(vintage)" if guitar.is_vintage() else ""
-        print("Guitar {0}: {1.name:>20} ({1.year}), worth ${1.cost:10,.2f}{2}".format(i, guitar, vintage_string))
-        i += 1
-    # else:
-    #     print("No guitars")
+    if len(guitars) > 0:
+        for i, guitar in enumerate(guitars, 1):
+            vintage_string = "(vintage)" if guitar.is_vintage() else ""
+            # print("Guitar {0}: {1.name:>20} ({1.year}), worth ${1.cost:10,.2f}{2}".format(i, guitar, vintage_string))
+            print(f"Guitar {i}: {guitar.name:>20} ({guitar.year}), worth ${guitar.cost:10,.2f}{vintage_string}")
+    else:
+        print("No guitars")
 
 
 main()

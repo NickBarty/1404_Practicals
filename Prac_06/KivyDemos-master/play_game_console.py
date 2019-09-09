@@ -1,6 +1,6 @@
 # Using the "model" class Game to play via the console "view"
 
-from board_game import TicTacToeGame, GameError
+from .board_game import TicTacToeGame, GameError
 
 game = TicTacToeGame()
 while not game.is_over():

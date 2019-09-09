@@ -30,4 +30,5 @@ class DynamicWidgetsApp(App):
     def clear_all(self):
         self.root.ids.entriesBox.clear_widgets()
 
+
 DynamicWidgetsApp().run()

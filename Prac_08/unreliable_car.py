@@ -1,4 +1,4 @@
-from Prac_08.car import Car
+from Prac_07.car import Car
 import random
 
 
